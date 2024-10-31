@@ -26,11 +26,11 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen`}>
+        className={`${geistSans.variable} ${geistMono.variable} antialiased `}>
         <header className='bg-slate-400 text-black py-6 text-center font-semibold text-3xl'>
           <p>Header</p>
         </header>
-        {children}
+        <div className='min-h-[calc(100vh-200px)]'>{children}</div>
         <header className='bg-slate-500 text-black py-6 text-center font-semibold text-3xl'>
           <p>Footer</p>
         </header>
