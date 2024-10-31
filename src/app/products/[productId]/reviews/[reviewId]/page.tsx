@@ -1,9 +1,14 @@
 import React from "react";
 
-export default function page({ params }: { params: { reviewId: string } }) {
+export default async function page({
+  params,
+}: {
+  params: { reviewId: string };
+}) {
+  const { reviewId } = params;
   return (
     <div>
-      <h1>review details of : {params.reviewId}</h1>
+      <h1>review details of : {reviewId}</h1>
     </div>
   );
 }
